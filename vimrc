@@ -14,16 +14,8 @@ filetype plugin indent on
 
 runtime macros/matchit.vim  " enables % to cycle through `if/else/endif`
 
-syntax enable
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
-let g:solarized_termcolors=256
-colorscheme solarized
+set number
 
-set nonumber    " line numbers aren't needed
 set ruler       " show the cursor position all the time
 set cursorline  " highlight the line of the cursor
 set showcmd     " show partial commands below the status line
@@ -41,7 +33,7 @@ set nowrap                        " don't wrap lines
 set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
-set list                          " Show invisible characters
+" set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
 " List chars
 set listchars=""                  " Reset the listchars
