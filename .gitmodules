@@ -52,3 +52,6 @@
 [submodule "bundle/liquid"]
 	path = bundle/liquid
 	url = https://github.com/tpope/vim-liquid
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
