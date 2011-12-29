@@ -1,4 +1,4 @@
-Mislav's vim configuration
+Strika's vim configuration forked from Mislav's vim configuration
 ==========================
 
 Thanks to these guys:
