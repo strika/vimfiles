@@ -89,6 +89,8 @@ let mapleader=","
 nmap <leader>p pV`]=
 nmap <leader>P PV`]=
 
+inoremap jj <Esc>
+
 map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
 map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
 map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
