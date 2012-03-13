@@ -24,6 +24,12 @@ let g:is_bash=1 " default shell syntax
 set history=200 " remember more Ex commands
 set scrolloff=3 " have some context around the current line always on screen
 
+" Disable bell
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+    autocmd GUIEnter * set visualbell t_vb=
+endif
+
 " Allow backgrounding buffers without writing them, and remember marks/undo
 " for backgrounded buffers
 set hidden
