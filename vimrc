@@ -152,3 +152,9 @@ if has("statusline") && !&cp
   set statusline+=Buf:#%n
   set statusline+=[%b][0x%B]
 endif
+
+" Pick color scheme
+set t_Co=256
+let g:solarized_termcolors=256
+set background=light
+colorscheme solarized
