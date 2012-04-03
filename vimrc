@@ -97,6 +97,7 @@ nmap <leader>P PV`]=
 
 inoremap jj <Esc>
 
+map <leader>ga :CommandTFlush<cr>\|:CommandT app<cr>
 map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
 map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
 map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
@@ -106,7 +107,7 @@ map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
 map <leader>gs :CommandTFlush<cr>\|:CommandT spec<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>f :CommandTFlush<cr>\|:CommandT ./<cr>
 " http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
