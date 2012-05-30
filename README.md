@@ -6,14 +6,12 @@ Thanks to these guys:
 * [Gary Bernhardt](http://destroyallsoftware.com),
 * [Drew Neil](http://vimcasts.org),
 * [Tim Pope](http://tbaggery.com),
-* and the [Janus project](https://github.com/carlhuda/janus).
-
-My configuration uses [Pathogen](https://github.com/tpope/vim-pathogen) and git submodules.
-(But you don't need to care about any of that.)
+* [Janus project](https://github.com/carlhuda/janus),
+* and [Mislav](http://mislav.uniqpath.com/) for putting this together.
 
 ## Installation:
 
-Prerequisites: ruby, git.
+Prerequisites: ruby, git, ack.
 
 1. Move your existing configuration somewhere else:  
    `mv ~/.vim* ~/.gvim* my_backup`
@@ -44,6 +42,11 @@ files inside the ".vim" directory.
   * `,gc` - in `app/controllers`
 * `,cf` - search for merge conflicts in buffer
 * `:KillWhitespace` - strip trailing whitespace
+* 'Leader' character mapped to "," (comma)
+* `,f` opens file search via :CommandT plugin
+* `,,` switches between two last buffers
+* `<C-j/k/h/l>` switches between windows (no need to prepend `<C-w>`)
+* cursor keys for movement disabled!
 
 ### Ack
 
@@ -138,3 +141,21 @@ Quickly open vim runtime files:
 Example:
 
     :Vsp s/pd<Tab>
+
+## Plugins:
+
+* ack
+* coffee-script
+* command-t
+* commentary
+* endwise
+* fugitive
+* javascrip
+* markdown
+* rails
+* ruby
+* vim-textobj-rubyblock
+
+## Included colorschemes:
+
+* solarized
