@@ -16,7 +16,7 @@ Prerequisites: ruby, git, ack.
 1. Move your existing configuration somewhere else:  
    `mv ~/.vim* ~/.gvim* my_backup`
 2. Clone this repo into ".vim":  
-   `git clone https://github.com/mislav/vimfiles ~/.vim`
+   `git clone https://github.com/strika/vimfiles ~/.vim`
 3. Go into ".vim" and run "rake":  
    `cd ~/.vim && rake`
 
@@ -43,7 +43,7 @@ files inside the ".vim" directory.
 * `,cf` - search for merge conflicts in buffer
 * `:KillWhitespace` - strip trailing whitespace
 * 'Leader' character mapped to "," (comma)
-* `,f` opens file search via :CommandT plugin
+* `,f` opens file search via :CtrlP plugin
 * `,,` switches between two last buffers
 * `<C-j/k/h/l>` switches between windows (no need to prepend `<C-w>`)
 * cursor keys for movement disabled!
@@ -146,8 +146,8 @@ Example:
 
 * ack
 * coffee-script
-* command-t
 * commentary
+* ctrlp
 * endwise
 * fugitive
 * javascrip
@@ -155,6 +155,7 @@ Example:
 * rails
 * ruby
 * vim-textobj-rubyblock
+* vimclojure
 
 ## Included colorschemes:
 
