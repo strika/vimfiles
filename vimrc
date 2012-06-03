@@ -97,20 +97,21 @@ nmap <leader>P PV`]=
 
 inoremap jj <Esc>
 
-map <leader>ga :CommandTFlush<cr>\|:CommandT app<cr>
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
-map <leader>gs :CommandTFlush<cr>\|:CommandT spec<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
+map <leader>ga :CtrlP app<cr>
+map <leader>gv :CtrlP app/views<cr>
+map <leader>gc :CtrlP app/controllers<cr>
+map <leader>gm :CtrlP app/models<cr>
+map <leader>gh :CtrlP app/helpers<cr>
+map <leader>gf :CtrlP features<cr>
+map <leader>gs :CtrlP spec<cr>
+map <leader>gl :CtrlP lib<cr>
+map <leader>f :CtrlP ./<cr>
+map <leader>b :CtrlPBuffer<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT ./<cr>
+map <leader>gd :topleft 100 :split db/schema.rb<cr>
+
 " http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 let g:CommandTMaxHeight=10
 let g:CommandTMinHeight=4
