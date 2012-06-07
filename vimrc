@@ -109,6 +109,7 @@ map <leader>f :CtrlP ./<cr>
 map <leader>b :CtrlPBuffer<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
 map <leader>gd :topleft 100 :split db/schema.rb<cr>
+map <leader>gr :topleft 100 :split config/routes.rb<cr>
 
 " http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -165,7 +166,7 @@ endif
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Pick color scheme
-set t_Co=256
-let g:solarized_termcolors=256
+" set t_Co=256
+" let g:solarized_termcolors=256
 set background=light
 colorscheme solarized
