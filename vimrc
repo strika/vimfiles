@@ -119,6 +119,7 @@ let g:CommandTMinHeight=4
 
 " ignore Rubinius, Sass cache files
 set wildignore+=tmp/**,*.rbc,.rbx,*.scssc,*.sassc
+set wildignore+=*/vendor/*,*/tmp/*
 
 nnoremap <leader><leader> <c-^>
 
