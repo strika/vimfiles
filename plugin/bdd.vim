@@ -39,5 +39,5 @@ function! RunTest(args)
   end
 endfunction
 
-map <Leader>; :call RunTest("")<CR>
+map <Leader>; :call RunTest(" -t slow")<CR>
 map <Leader>' :call RunTestFile("")<CR>
