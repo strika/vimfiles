@@ -7,7 +7,7 @@ Thanks to these guys:
 * [Drew Neil](http://vimcasts.org),
 * [Tim Pope](http://tbaggery.com),
 * [Janus project](https://github.com/carlhuda/janus),
-* and [Mislav](http://mislav.uniqpath.com/) for putting this together.
+* [Mislav](http://mislav.uniqpath.com/).
 
 ## Installation:
 
@@ -19,6 +19,8 @@ Prerequisites: ruby, git, ack.
    `git clone https://github.com/strika/vimfiles ~/.vim`
 3. Go into ".vim" and run "rake":  
    `cd ~/.vim && rake`
+4. Open vim and run:
+   `:BunleInstall`
 
 This will install "~/.vimrc" and "~/.gvimrc" symlinks that point to
 files inside the ".vim" directory.
@@ -150,7 +152,7 @@ Example:
 * ctrlp
 * endwise
 * fugitive
-* javascrip
+* javascript
 * markdown
 * rails
 * ruby
