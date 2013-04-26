@@ -1,15 +1,33 @@
-""
-"" Thanks:
-""   Gary Bernhardt  <destroyallsoftware.com>
-""   Drew Neil  <vimcasts.org>
-""   Tim Pope  <tbaggery.com>
-""   Janus  <github.com/carlhuda/janus>
-""
-
 set nocompatible
 set encoding=utf-8
 
-call pathogen#infect()
+" Vundle
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'mileszs/ack.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-commentary'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fugitive'
+Bundle 'pangloss/vim-javascript'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-surround'
+Bundle 'godlygeek/tabular'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-cucumber'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'vim-scripts/VimClojure'
+
 filetype plugin indent on
 
 runtime macros/matchit.vim  " enables % to cycle through `if/else/endif`
