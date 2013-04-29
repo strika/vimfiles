@@ -27,6 +27,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'renderedtext/vim-bdd'
 
 filetype plugin indent on
 
