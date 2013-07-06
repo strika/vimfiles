@@ -20,7 +20,7 @@ Prerequisites: ruby, git, ack.
 3. Go into ".vim" and run "rake":  
    `cd ~/.vim && rake`
 4. Open vim and run:
-   `:BunleInstall`
+   `:BundleInstall`
 
 This will install "~/.vimrc" and "~/.gvimrc" symlinks that point to
 files inside the ".vim" directory.
