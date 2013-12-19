@@ -36,7 +36,7 @@ files inside the ".vim" directory.
 * cursor keys for movement are disabled!
 * `Q` - format lines
 * `,,` alternates between two most recent buffers
-* `,f` - jump to file:
+* `,f` - opens file search with :CtrlP plugin:
   * `,F` - search in directory of current buffer
   * `,gl` - in `lib/`
   * `,gm` - in `app/models`
@@ -45,8 +45,9 @@ files inside the ".vim" directory.
 * `,cf` - search for merge conflicts in buffer
 * `:KillWhitespace` - strip trailing whitespace
 * 'Leader' character mapped to "," (comma)
-* `,f` opens file search via :CtrlP plugin
 * `,,` switches between two last buffers
+* `,s` opens spec
+* `,v` opens spec in split view
 * `<C-j/k/h/l>` switches between windows (no need to prepend `<C-w>`)
 * cursor keys for movement disabled!
 
