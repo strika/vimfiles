@@ -197,6 +197,9 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 " Clojure
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
+" Git
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 " Pick color scheme
 " set t_Co=256
 " let g:solarized_termcolors=256
