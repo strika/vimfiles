@@ -7,6 +7,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
@@ -14,24 +15,23 @@ Bundle 'guns/vim-clojure-static'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'nono/vim-handlebars'
 Bundle 'pangloss/vim-javascript'
 Bundle 'renderedtext/vim-bdd'
 Bundle 'scrooloose/syntastic'
-Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-classpath'
 Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-classpath'
+Bundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
