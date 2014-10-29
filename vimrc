@@ -34,8 +34,6 @@ Bundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
-runtime macros/matchit.vim  " enables % to cycle through `if/else/endif`
-
 syntax enable
 
 set number
@@ -50,7 +48,7 @@ set scrolloff=3 " have some context around the current line always on screen
 " Disable bell
 set noerrorbells visualbell t_vb=
 if has('autocmd')
-    autocmd GUIEnter * set visualbell t_vb=
+  autocmd GUIEnter * set visualbell t_vb=
 endif
 
 " Allow backgrounding buffers without writing them, and remember marks/undo
@@ -141,9 +139,6 @@ map <leader>v :AV<CR>
 " http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
-let g:CommandTMaxHeight=10
-let g:CommandTMinHeight=4
-
 " ignore Rubinius, Sass cache files
 set wildignore+=tmp/**,*.rbc,.rbx,*.scssc,*.sassc
 set wildignore+=*/vendor/*
@@ -162,9 +157,9 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
 " map Ctrl+S to :w
-noremap <silent> <C-S>          :update<CR>
-vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <C-O>:update<CR>
+noremap <silent> <C-S>  :update<CR>
+vnoremap <silent> <C-S> <C-C>:update<CR>
+inoremap <silent> <C-S> <C-O>:update<CR>
 
 " disable cursor keys in normal mode
 map <Left>  :echo "no!"<cr>
