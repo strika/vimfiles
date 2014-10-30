@@ -34,6 +34,8 @@ Bundle 'vim-ruby/vim-ruby'
 
 filetype plugin indent on
 
+runtime macros/matchit.vim " enables % to cycle through `if/else/endif`
+
 syntax enable
 
 set number
