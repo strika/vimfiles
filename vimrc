@@ -169,6 +169,9 @@ map <Right> :echo "no!"<cr>
 map <Up>    :echo "no!"<cr>
 map <Down>  :echo "no!"<cr>
 
+" update gems macro
+let @u='gg^dwiUpdate jjt(llds(Jdt(i -> jjwwds(:w'
+
 set backupdir=~/.vim/_backup    " where to put backup files.
 set directory=~/.vim/_temp      " where to put swap files.
 
