@@ -1,13 +1,13 @@
-Strika's vim configuration forked from Mislav's vim configuration
+Strika's Vim configuration
 ==========================
 
 Thanks to these guys:
 
-* [Gary Bernhardt](http://destroyallsoftware.com),
-* [Drew Neil](http://vimcasts.org),
-* [Tim Pope](http://tbaggery.com),
-* [Janus project](https://github.com/carlhuda/janus),
-* [Mislav](http://mislav.uniqpath.com/).
+* [Drew Neil](http://vimcasts.org)
+* [Gary Bernhardt](http://destroyallsoftware.com)
+* [Janus project](https://github.com/carlhuda/janus)
+* [Mislav Marohnić](http://mislav.uniqpath.com/)
+* [Tim Pope](http://tbaggery.com)
 
 ## Installation:
 
@@ -31,20 +31,21 @@ files inside the ".vim" directory.
 
 * 2 spaces, no tabs
 * incremental, case-insensitive search
+* 'Leader' character mapped to "," (comma)
 * `<CR>` - remove highlighting after search
 * `<C-j/k/h/l>` - switch between splits (no need to prepend `<C-w>`)
 * cursor keys for movement are disabled!
 * `Q` - format lines
 * `,,` alternates between two most recent buffers
 * `,f` - opens file search with :CtrlP plugin:
-  * `,F` - search in directory of current buffer
+  * `,b` - search in directory of current buffer
   * `,gl` - in `lib/`
   * `,gm` - in `app/models`
   * `,gv` - in `app/views`
   * `,gc` - in `app/controllers`
+  * `,gs` - in `specs`
 * `,cf` - search for merge conflicts in buffer
 * `:KillWhitespace` - strip trailing whitespace
-* 'Leader' character mapped to "," (comma)
 * `,,` switches between two last buffers
 * `,s` opens spec
 * `,v` opens spec in split view
@@ -129,21 +130,6 @@ In visual mode:
 * `:Gread` - `checkout %`
 * `:Gremove` - `rm %`
 * `:Gmove <dest>` - `mv % <dest>`
-
-### Pathogen
-
-Quickly open vim runtime files:
-
-* `:Vedit`
-* `:Vsplit`
-* `:Vvsplit`
-* `:Vtabedit`
-* `:Vpedit`
-* `:Vread`
-
-Example:
-
-    :Vsp s/pd<Tab>
 
 ## Plugins:
 
