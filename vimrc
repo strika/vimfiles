@@ -199,6 +199,10 @@ autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 " Git
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
+" Spellcheck
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.md.erb setlocal spell
+
 " Pick color scheme
 " set t_Co=256
 " let g:solarized_termcolors=256
