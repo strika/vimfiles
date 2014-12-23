@@ -9,6 +9,7 @@ call vundle#rc()
 
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'chriskempson/base16-vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'guns/vim-clojure-static'
@@ -202,9 +203,11 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " Spellcheck
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.md.erb setlocal spell
+autocmd BufRead,BufNewFile *.feature setlocal spell
 
 " Pick color scheme
 " set t_Co=256
 " let g:solarized_termcolors=256
-set background=light
-colorscheme solarized
+let base16colorspace=256
+set background=dark
+colorscheme base16-mocha
