@@ -1,4 +1,4 @@
-task :default => [:tmp_dirs, :update, :link]
+task :default => [:tmp_dirs, :update, :link, :bundle_install]
 
 desc %(Bring bundles up to date)
 task :update do
@@ -13,6 +13,11 @@ task :submodule_pull do
         git log --no-merges --pretty=format:"%s %Cgreen(%ar)%Creset" --date=relative master@{1}..
         echo
       ']
+end
+
+desc %(Install vundle plugins)
+task :bundle_install do
+  sh "vim +BundleInstall +qall 2>&1 1>/dev/null"
 end
 
 desc %(Make ~/.vimrc and ~/.gvimrc symlinks)
