@@ -17,7 +17,7 @@ end
 
 desc %(Install vundle plugins)
 task :bundle_install do
-  sh "vim +BundleInstall +qall 2>&1 1>/dev/null"
+  sh "vim +BundleInstall +qall"
 end
 
 desc %(Make ~/.vimrc and ~/.gvimrc symlinks)
