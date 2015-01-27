@@ -209,5 +209,5 @@ autocmd BufRead,BufNewFile *.feature setlocal spell
 " Pick color scheme
 " set t_Co=256
 " let g:solarized_termcolors=256
-set background=light
-colorscheme solarized
+" set background=light
+" colorscheme solarized
