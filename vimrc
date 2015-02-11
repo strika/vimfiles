@@ -209,5 +209,6 @@ autocmd BufRead,BufNewFile *.feature setlocal spell
 " Pick color scheme
 " set t_Co=256
 " let g:solarized_termcolors=256
+let base16colorspace=256
 set background=dark
 colorscheme base16-mocha
