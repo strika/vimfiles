@@ -51,7 +51,7 @@ set scrolloff=3 " have some context around the current line always on screen
 
 " Disable bell
 set noerrorbells visualbell t_vb=
-if has('autocmd')
+if has("autocmd")
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
@@ -80,18 +80,20 @@ set incsearch                     " incremental searching
 set ignorecase                    " searches are case insensitive...
 set smartcase                     " ... unless they contain at least one capital letter
 
-function s:setupWrapping()
+function s:setupWrappingAndSpellcheck()
   set wrap
   set wrapmargin=2
   set textwidth=80
+  set spell
 endfunction
 
 if has("autocmd")
   " In Makefiles, use real tabs, not tabs expanded to spaces
   au FileType make set noexpandtab
 
-  " Make sure all markdown files have the correct filetype set and setup wrapping
-  au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrapping()
+  " Make sure all markdown files have the correct filetype set and setup
+  " wrapping and spell check
+  au BufRead,BufNewFile *.{md,md.erb,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrappingAndSpellcheck()
 
   " Treat JSON files like JavaScript
   au BufNewFile,BufRead *.json set ft=javascript
@@ -106,6 +108,17 @@ if has("autocmd")
 
   " mark Jekyll YAML frontmatter as comment
   au BufNewFile,BufRead *.{md,markdown,html,xml} sy match Comment /\%^---\_.\{-}---$/
+
+  " Clojure
+  au BufRead,BufNewFile *.cljs setlocal filetype=clojure
+
+  " Git
+  au Filetype gitcommit setlocal spell textwidth=72
+
+  " Spellcheck
+  au BufRead,BufNewFile *.md setlocal spell
+  au BufRead,BufNewFile *.md.erb setlocal spell
+  au BufRead,BufNewFile *.feature setlocal spell
 endif
 
 " don't use Ex mode, use Q for formatting
@@ -197,17 +210,6 @@ endif
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w><CR>
-
-" Clojure
-autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
-
-" Git
-autocmd Filetype gitcommit setlocal spell textwidth=72
-
-" Spellcheck
-autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.md.erb setlocal spell
-autocmd BufRead,BufNewFile *.feature setlocal spell
 
 " Pick color scheme
 " set t_Co=256
