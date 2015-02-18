@@ -58,6 +58,8 @@ files inside the ".vim" directory.
 * `:Ack!` - search, but don't jump to first match
 * `:AckFromSearch`
 * `:AckAdd` - append to existing quickfix list
+* `,a` - opens Ack with cursor between ""
+* `,A` - opens Ack and searches for the word below cursor
 
 ### Surround
 

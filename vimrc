@@ -193,7 +193,10 @@ if has("statusline") && !&cp
   set statusline+=[%b][0x%B]
 endif
 
+" Ack
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+nmap <leader>a :Ack ""<Left>
+nmap <leader>A :Ack <C-r><C-w><CR>
 
 " Clojure
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
