@@ -110,7 +110,7 @@ if has("autocmd")
   au BufNewFile,BufRead *.{md,markdown,html,xml} sy match Comment /\%^---\_.\{-}---$/
 
   " Clojure
-  au BufRead,BufNewFile *.cljs setlocal filetype=clojure
+  au BufRead,BufNewFile *.{cljs,boot} setlocal filetype=clojure
 
   " Git
   au Filetype gitcommit setlocal spell textwidth=72
