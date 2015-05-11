@@ -95,6 +95,9 @@ if has("autocmd")
   " wrapping and spell check
   au BufRead,BufNewFile *.{md,md.erb,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrappingAndSpellcheck()
 
+  " Spellcheck
+  au BufRead,BufNewFile *.feature setlocal spell
+
   " Treat JSON files like JavaScript
   au BufNewFile,BufRead *.json set ft=javascript
 
@@ -114,11 +117,6 @@ if has("autocmd")
 
   " Git
   au Filetype gitcommit setlocal spell textwidth=72
-
-  " Spellcheck
-  au BufRead,BufNewFile *.md setlocal spell
-  au BufRead,BufNewFile *.md.erb setlocal spell
-  au BufRead,BufNewFile *.feature setlocal spell
 endif
 
 " don't use Ex mode, use Q for formatting
