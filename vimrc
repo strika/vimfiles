@@ -10,6 +10,7 @@ call vundle#rc()
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'chriskempson/base16-vim'
+Bundle 'danro/rename.vim'
 Bundle 'gmarik/vundle'
 Bundle 'godlygeek/tabular'
 Bundle 'guns/vim-clojure-static'
