@@ -104,9 +104,6 @@ if has("autocmd")
   " Treat JSON files like JavaScript
   au BufNewFile,BufRead *.json set ft=javascript
 
-  " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
-  au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
-
   " Remember last location in file, but not for commit messages.
   " see :help last-position-jump
   au BufReadPost * if &filetype !~ '^git\c' && line("'\"") > 0 && line("'\"") <= line("$")
@@ -185,7 +182,7 @@ map <Right> :echo "no!"<cr>
 map <Up>    :echo "no!"<cr>
 map <Down>  :echo "no!"<cr>
 
-" update gems macro
+" Update gems macro
 let @u='gg^dwiUpdate jjt(llds(Jdt(i -> jjwwds(:w'
 
 set backupdir=~/.vim/_backup    " where to put backup files.
