@@ -91,6 +91,9 @@ if has("autocmd")
   " In Makefiles, use real tabs, not tabs expanded to spaces
   au FileType make set noexpandtab
 
+  " Delete empty space from the end of lines on every save
+  au BufWritePre * :%s/\s\+$//e
+
   " Make sure all markdown files have the correct filetype set and setup
   " wrapping and spell check
   au BufRead,BufNewFile *.{md,md.erb,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrappingAndSpellcheck()
