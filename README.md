@@ -33,8 +33,10 @@ files inside the ".vim" directory.
 * incremental, case-insensitive search
 * 'Leader' character mapped to "," (comma)
 * `<CR>` - remove highlighting after search
+* cursor keys for movement are disabled
 * `<C-j/k/h/l>` - switch between splits (no need to prepend `<C-w>`)
-* cursor keys for movement are disabled!
+* relative line numbers by default
+* `<C-n>` switches between relative and absolute line numbers
 * `Q` - format lines
 * `,,` alternates between two most recent buffers
 * `,f` - opens file search with :CtrlP plugin:
@@ -49,8 +51,6 @@ files inside the ".vim" directory.
 * `,,` switches between two last buffers
 * `,s` opens spec
 * `,v` opens spec in split view
-* `<C-j/k/h/l>` switches between windows (no need to prepend `<C-w>`)
-* cursor keys for movement disabled!
 
 ### Ack
 
