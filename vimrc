@@ -120,9 +120,6 @@ if has("autocmd")
   au Filetype gitcommit setlocal spell textwidth=72
 endif
 
-" don't use Ex mode, use Q for formatting
-map Q gq
-
 " clear the search buffer when hitting return
 :nnoremap <CR> :nohlsearch<cr>
 
@@ -151,9 +148,6 @@ map <leader>gd :topleft 100 :split db/schema.rb<cr>
 map <leader>gr :topleft 100 :split config/routes.rb<cr>
 map <leader>s :A<CR>
 map <leader>v :AV<CR>
-
-" http://vimcasts.org/e/14
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " ignore Rubinius, Sass cache files
 set wildignore+=tmp/**,*.rbc,.rbx,*.scssc,*.sassc
