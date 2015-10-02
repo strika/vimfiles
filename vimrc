@@ -39,6 +39,8 @@ filetype plugin indent on
 
 syntax enable
 
+runtime macros/matchit.vim          " Enables % to cycle through `if/else/endif`, recognizing Ruby blocks, etc.
+
 set number
 set ruler                           " Show the cursor position all the time
 set cursorline                      " Highlight the line of the cursor
