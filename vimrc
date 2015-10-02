@@ -40,18 +40,20 @@ filetype plugin indent on
 syntax enable
 
 set number
-set ruler                         " Show the cursor position all the time
-set cursorline                    " Highlight the line of the cursor
-set showcmd                       " Show partial commands below the status line
-set shell=bash                    " Avoids munging PATH under zsh
-let g:is_bash=1                   " Default shell syntax
-set history=200                   " Remember more Ex commands
-set scrolloff=3                   " Have some context around the current line always
-                                  " on screen
-set noerrorbells visualbell t_vb= " Disable bell
-set hidden                        " Allow backgrounding buffers without writing
-                                  " them, and remember marks/undo for backgrounded
-                                  " buffers
+set ruler                           " Show the cursor position all the time
+set cursorline                      " Highlight the line of the cursor
+set showcmd                         " Show partial commands below the status line
+set shell=bash                      " Avoids munging PATH under zsh
+let g:is_bash=1                     " Default shell syntax
+set history=200                     " Remember more Ex commands
+set scrolloff=3                     " Have some context around the current line always
+                                    " on screen
+set noerrorbells visualbell t_vb=   " Disable bell
+set hidden                          " Allow backgrounding buffers without writing
+                                    " them, and remember marks/undo for backgrounded
+                                    " buffers
+set backupdir=~/.vim/_backup        " where to put backup files.
+set directory=~/.vim/_temp          " where to put swap files.
 
 " Whitespace
 set nowrap                        " don't wrap lines
@@ -168,12 +170,6 @@ map <Left>  :echo "no!"<cr>
 map <Right> :echo "no!"<cr>
 map <Up>    :echo "no!"<cr>
 map <Down>  :echo "no!"<cr>
-
-" Update gems macro
-let @u='gg^dwiUpdate jjt(llds(Jdt(i -> jjwwds(:w'
-
-set backupdir=~/.vim/_backup    " where to put backup files.
-set directory=~/.vim/_temp      " where to put swap files.
 
 if has("statusline") && !&cp
   set laststatus=2  " always show the status bar
