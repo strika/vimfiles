@@ -40,31 +40,26 @@ filetype plugin indent on
 syntax enable
 
 set number
-set ruler       " show the cursor position all the time
-set cursorline  " highlight the line of the cursor
-set showcmd     " show partial commands below the status line
-set shell=bash  " avoids munging PATH under zsh
-let g:is_bash=1 " default shell syntax
-set history=200 " remember more Ex commands
-set scrolloff=3 " have some context around the current line always on screen
+set ruler                         " Show the cursor position all the time
+set cursorline                    " Highlight the line of the cursor
+set showcmd                       " Show partial commands below the status line
+set shell=bash                    " Avoids munging PATH under zsh
+let g:is_bash=1                   " Default shell syntax
+set history=200                   " Remember more Ex commands
+set scrolloff=3                   " Have some context around the current line always
+                                  " on screen
+set noerrorbells visualbell t_vb= " Disable bell
+set hidden                        " Allow backgrounding buffers without writing
+                                  " them, and remember marks/undo for backgrounded
+                                  " buffers
 
-" Disable bell
-set noerrorbells visualbell t_vb=
-if has("autocmd")
-  autocmd GUIEnter * set visualbell t_vb=
-endif
-
-" Allow backgrounding buffers without writing them, and remember marks/undo
-" for backgrounded buffers
-set hidden
-
-"" Whitespace
+" Whitespace
 set nowrap                        " don't wrap lines
 set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
-" set list                          " Show invisible characters
 set backspace=indent,eol,start    " backspace through everything in insert mode
+
 " List chars
 set listchars=""                  " Reset the listchars
 set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
@@ -73,7 +68,7 @@ set listchars+=extends:>          " The character to show in the last column whe
                                   " off and the line continues beyond the right of the screen
 set listchars+=precedes:<         " The character to show in the first column when wrap is
                                   " off and the line continues beyond the left of the screen
-"" Searching
+" Searching
 set hlsearch                      " highlight matches
 set incsearch                     " incremental searching
 set ignorecase                    " searches are case insensitive...
@@ -201,9 +196,7 @@ let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 nmap <leader>a :Ack ""<Left>
 nmap <leader>A :Ack <C-r><C-w><CR>
 
-" Pick color scheme
-" set t_Co=256
-" let g:solarized_termcolors=256
+" Color scheme
 let base16colorspace=256
 set background=dark
 colorscheme base16-mocha
