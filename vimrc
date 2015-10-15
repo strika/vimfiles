@@ -86,9 +86,6 @@ function s:setupWrappingAndSpellcheck()
 endfunction
 
 if has("autocmd")
-  " In Makefiles, use real tabs, not tabs expanded to spaces
-  au FileType make set noexpandtab
-
   " Delete empty space from the end of lines on every save
   au BufWritePre * :%s/\s\+$//e
 
