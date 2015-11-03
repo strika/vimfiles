@@ -20,9 +20,9 @@ task :bundle_install do
   sh "vim +BundleInstall +qall"
 end
 
-desc %(Make ~/.vimrc and ~/.gvimrc symlinks)
+desc %(Make ~/.vimrc symlinks)
 task :link do
-  %w[vimrc gvimrc].each do |script|
+  %w[vimrc].each do |script|
     dotfile = File.join(ENV['HOME'], ".#{script}")
     if File.exist? dotfile
       warn "~/.#{script} already exists"
@@ -35,13 +35,6 @@ end
 task :tmp_dirs do
   mkdir_p "_backup"
   mkdir_p "_temp"
-end
-
-task :macvim_check do
-  if mvim = which('mvim') and '/usr/bin/vim' == which('vim')
-    warn color('Warning:', 31) + " You have MacVim installed, but `vim` still opens system Vim."
-    warn "To use MacVim version when you invoke `vim`:  " + color("$ ln -s mvim #{File.dirname(mvim)}/vim", 37)
-  end
 end
 
 def color msg, code
